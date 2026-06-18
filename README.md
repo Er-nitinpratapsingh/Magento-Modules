@@ -11,7 +11,7 @@ app/code/Vendor/ModuleName
 4. Run the following commands:
 
 ```bash
-composer install
+composer install 
 php bin/magento module:enable Vendor_ModuleName
 php bin/magento setup:upgrade
 php bin/magento setup:di:compile
