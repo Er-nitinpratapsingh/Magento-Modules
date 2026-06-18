@@ -1,27 +1,14 @@
 # Magento 2 Module Installation
 
-## Option 1: Git Deployment
-
-```bash
-git pull origin <branch-name>
-composer install
-php bin/magento module:enable Vendor_ModuleName
-php bin/magento setup:upgrade
-php bin/magento setup:di:compile
-php bin/magento setup:static-content:deploy -f
-php bin/magento indexer:reindex
-php bin/magento cache:flush
-```
-
-## Option 2: Manual Installation
-
-1. Copy module to:
+1. Download the module repository as a **ZIP** file from GitHub.
+2. Extract the ZIP file.
+3. Copy the module folder to:
 
 ```text
 app/code/Vendor/ModuleName
 ```
 
-2. Run:
+4. Run the following commands:
 
 ```bash
 composer install
